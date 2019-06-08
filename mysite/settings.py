@@ -25,7 +25,7 @@ SECRET_KEY = '037h-q&6b#b&-w-$-&)2$k+he-x(mjg(&5vq)c)o#si+1l8*97'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -152,9 +152,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['*']
 
-DEBUG = False
+DEBUG = True
 
 try:
     from .local_settings import *
